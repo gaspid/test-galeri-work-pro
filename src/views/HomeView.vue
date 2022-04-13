@@ -3,15 +3,17 @@
     <v-list/>
   </div>
   <div class="pagination">
-    <div class="page_list">1</div>
+    <v-pagination/>
   </div>
 </template>
 
 <script>
 import vList from '../components/vList'
+import vPagination from '../components/vPagination'
 export default {
   components: {
-    vList
+    vList,
+    vPagination
   },
   name: 'HomePage'
 }
@@ -25,11 +27,6 @@ export default {
     width: 100%;
     height: 10vh;
     top:90vh;
-  }
-  .page_list{
-  display:flex;
-  align-items: center;
-  justify-content: center;
   }
   .home{
   font-family: roboto,sans-serif;

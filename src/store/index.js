@@ -4,18 +4,18 @@ import axios from 'axios'
 export default createStore({
   state: () => ({
     post: [],
-    page: 1
-
+    page: 4
   }),
   getters: {
+
   },
   mutations: {
     mutPost (state, post) {
       state.post = post
     },
 
-    mutPage (state, page) {
-      state.page = page
+    mutPage (state, num, actions) {
+      state.page = num
     }
   },
   actions: {

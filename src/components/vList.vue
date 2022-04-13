@@ -12,7 +12,9 @@ export default {
     vCard
   },
   methods: {
-    ...mapMutations({}),
+    ...mapMutations({
+
+    }),
     ...mapActions({
       loadFull: 'loadFull'
     })
@@ -26,7 +28,6 @@ export default {
       post: state => state.post
     })
   }
-
 }
 </script>
 
@@ -35,7 +36,7 @@ export default {
   display : flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom:60px;
+  padding-bottom:70px;
   width: 100%;
 }
 @media only screen and (min-width: 1000px)  {
